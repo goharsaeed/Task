@@ -22,7 +22,7 @@ namespace NewHireTask.Repositories
         {
             return ieps.Where(iep => iep.Id == id).SingleOrDefault();
         }
-        //for delete
+        //for delete IEPs
         public void DeleteIep(Guid id)
         {
              var iep = GetIep(id);
